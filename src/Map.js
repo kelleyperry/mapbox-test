@@ -61,8 +61,7 @@ export class Map extends Component {
           {feature.properties.address}
         </button>
         <div className="details">
-          {feature.properties.city} &bull;{" "}
-          {feature.properties.phoneFormatted
+          {feature.properties.city} &bull; {feature.properties.phoneFormatted
             ? feature.properties.phoneFormatted
             : "no phone"}
         </div>
