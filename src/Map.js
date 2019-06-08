@@ -56,16 +56,9 @@ export class Map extends Component {
         <button className='title' dataposition={i} onClick={() => this.showStore(feature)}>
           {feature.properties.address}
         </button>
-<<<<<<< HEAD
         <div className='details'>
           {feature.properties.city} &bull;{' '}
           {feature.properties.phoneFormatted ? feature.properties.phoneFormatted : 'no phone'}
-=======
-        <div className="details">
-          {feature.properties.city} &bull; {feature.properties.phoneFormatted
-            ? feature.properties.phoneFormatted
-            : "no phone"}
->>>>>>> 741916f991ee2af3cfac5ff1bdf20627a379645c
         </div>
       </div>
     ));
@@ -77,7 +70,7 @@ export class Map extends Component {
     let el = document.createElement('div');
     el.className = 'marker';
     new mapboxgl.Marker(el, {
-      offset: [
+      offset : [
         0,
         -23
       ]
